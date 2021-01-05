@@ -36,7 +36,7 @@ https://lynntuuu.github.io/circus-website/
 * RWD
 
 ## 聲明
-* 圖片和資料來源皆來自於[厚道先生](https://www.facebook.com/1798circus/)
+* 圖片和資料來源皆來自於[找一種感覺](https://www.facebook.com/1798circus/)
 * 本作品內的圖片與內容，純粹為個人練習技術使用，不做任何商業用途。
 
 ###### tags: `GitHub README`
