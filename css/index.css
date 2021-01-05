@@ -1,0 +1,521 @@
+@charset "utf-8";
+@import url("indexrwd.css");
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+html, body{
+	padding:0;
+	margin:0;
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+}
+
+/* header */
+header{
+	padding: 5px 0px;
+	color:#fff;
+	text-align:center;
+	position:relative;
+}
+
+.menu{
+	display:block;
+	position:absolute;
+	width:30px;
+	height:30px;
+	background:url(../images/menu.png);
+	right:20px;
+	top:20px;
+	/*改menu的顏色*/
+}
+
+.menu:hover{
+	cursor:pointer;
+}
+
+/* nav */
+nav{
+	margin:auto;
+	background: #f0c4b5;
+	text-align:center;
+	display: none;
+	letter-spacing: .2em;
+	font-weight: 550;
+}
+
+nav ul{
+	margin:0;
+}
+
+nav ul li{
+	display: block;
+}
+
+nav ul li a{
+	display:inline-block;
+	text-decoration:none;
+	width:100%;
+	color: #706d6d;
+	padding:15px 30px;
+}
+
+.link {
+  display: inline-block;
+  color: #666;;
+  text-decoration: none;
+}
+
+.link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #706d6d;
+  transition: width .3s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/*main*/
+main{
+	position:relative;
+	margin-top:0px;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	background: url(../images/4.jpg)
+}
+
+
+/*story1*/
+.title{
+	padding: 70px 50px 60px;
+	position: relative;
+	display: block;
+	overflow:hidden;
+}
+
+.start{
+	color: #AC8062;
+	text-align: center;
+	top: 20px;
+	position: relative;
+	font-weight: 400;
+	letter-spacing: .2em;
+	
+	-webkit-animation-name:ant;
+	animation-name: ant;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-iteration-count:1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function:ease;
+	animation-timing-function: ease;
+}
+
+@keyframes ant{
+	from {opacity:0;}
+	to {opacity: 0.8;}
+}
+
+/*flex*/
+.project1{
+	width:80%;
+	margin: auto;
+}
+
+.this{
+	align-content: 600;
+	font-size: 22px;
+	color: #d5af93;
+	text-align: center;
+	letter-spacing: .2em;
+	line-height:2em;
+}
+
+.why{
+	font-size: 15px;
+	color: #706d6d;
+	letter-spacing: .2em;
+	line-height:1.5em;
+}
+
+.col-text {
+ 	height:20em;
+}
+.grid-flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	flex-direction: row; 
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+}
+.col {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.col-left {
+	-webkit-box-ordinal-group:-1;
+	-webkit-order: -1;
+	-ms-flex-order: -1;
+	order: -1;
+}
+.col-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Aligner-item {
+	width: 90%;
+	line-height:1.5em;
+	text-align: center;
+	font-weight: 600;
+	color: #666;
+}
+
+.col-image {
+	background-size: cover;
+	background-position:center center;
+	border: 1px solid #dadbce;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+	.grid-flex {
+		height: 40em;
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+		flex-direction: column; 
+   	}
+	.col {
+		order:vertical;
+	}
+	.col-left {
+		-webkit-box-ordinal-group:0;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
+	}
+	.col-text div p {
+		padding: 1em;
+	}
+	.Aligner-item {
+		width: 90%;
+	}
+}
+
+/*story2*/
+.title1{
+	padding: 100px 0px 50px;
+	position: relative;
+	display: block;
+	overflow:hidden;
+}
+.member{
+	position: relative;
+	padding: 0px 0px 10px;
+  	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	text-align:center;
+	margin: auto;
+}
+
+.card{
+	position: relative;
+	width:100%;
+	text-align:center;
+	border: solid 20px #fff;
+	color:rgba(112,109,109,1);
+	display: block;
+}
+
+.card p{
+	color: #706d6d;
+	font-weight: 550;
+	letter-spacing: .2em;
+}
+
+.name{
+	padding-top: 15px;
+	color: #d5af93;
+	line-height: 2em;
+	font-size: 20px;
+	letter-spacing: .2em;
+}
+
+.card img{
+	box-shadow: 2px 2px 8px #999;/*水平位移，垂直位移，模糊程度，顏色*/
+	-ms-transform: scale(1,1);/*IE 9*/
+	-webkit-transform: scale(1,1);/*Safari*/
+	transform:scale(1,1);/*Standard syntax*/
+	
+	/*動態設定*/
+	transition:transform 0.5s;
+	-webkit-transition: transform 0.5s;
+	
+	transition-timing-function:ease-in-out;
+	-webkit-transition-timing-fuction:ease-in-out;/*Safari*/
+	
+	/*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;*/
+}
+
+.card img:hover{
+	
+	-ms-transform: scale(1.1,1.1);/*IE 9*/
+	-webkit-transform: scale(1.1,1.1);/*Safari*/
+	transform:scale(1.1,1.1);/*Standard syntax*/
+	
+	/*cursor:pointer;
+	
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);*/
+}
+
+/*button1*/
+.team1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+button.button1{
+	background-color: #fff; 
+	color: #A4D2E3; 
+	border: 2px solid #A4D2E3;
+	border-radius: 25px;
+    width: 180px;
+	padding: 16px 30px;
+	font-size: 16px;
+	font-weight: bolder;
+	letter-spacing: .2em;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+	outline:none;
+}
+
+button.button1:hover {
+    background-color: #A4D2E3;
+    color: white;
+}
+
+
+/*story3*/
+.title2{
+	padding: 60px 0px 30px;
+	position: relative;
+	display: block;
+	overflow:hidden;
+}
+
+.container {
+	margin: auto;
+	max-width: 1000px;
+	padding-top: 45px;
+}
+
+.pic {
+	max-width: 100%;
+	opacity: 0.9;
+}
+
+.cell img {
+	display: block;
+}
+
+
+.text{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+
+.word{
+	background-color: #fff; 
+	color: #d5af93; 
+	/*border: 2px solid #d6b59f;*/
+    width: 100%;
+	padding: 0px 30px;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: .2em;
+	line-height: 2em;
+	text-decoration: none;
+	outline:none;
+	text-align: center;
+}
+
+.word p{
+	font-size:15px;
+	font-weight: 600;
+	color:#706d6d;
+}
+
+/*button2*/
+.team2{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+button.button2{
+	background-color: #fff; 
+	color: #ffb4ac;
+	border: 2px solid #ffb4ac;
+	border-radius: 25px;
+    width: 180px;
+	padding: 16px 30px;
+	font-size: 16px;
+	font-weight: bolder;
+	letter-spacing: .2em;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+	outline:none;
+}
+
+button.button2:hover {
+    background-color: #ffb4ac;
+    color: white;
+}
+/*footer*/
+footer{
+	margin:auto;
+	background: #c8e8ed;
+	text-align:center;
+	width:100%;
+}
+
+footer ul{
+	margin:0;
+	padding-top: 20px;
+}
+
+footer ul li{
+	display: block;
+	border-bottom:solid #fff 0px;
+  	
+}
+
+footer ul li a{
+	text-align: center;
+	display:block;
+	color:#706d6d;
+	text-decoration:none;
+	width:100%;
+	padding:15px 0px;
+	letter-spacing: .2em;
+	font-weight: 550;
+}
+
+footer ul li a:hover{
+  	display:block;
+   	margin:auto;
+	color: #bbbbbb;
+	transition: background 0.4s, color 0.4s;
+	-webkit-transition:background 0.4s, color 0.4s;
+}
+
+.logo{
+	padding-top: 10px;
+	padding-bottom: 0px;
+	background: #c8e8ed;
+	text-align:center;
+	position:relative;
+}
+
+.ficon{
+	padding:0 2px 10px;
+	color: #f3908e;
+}
+
+.copy{
+	letter-spacing: .2em;
+	font-weight: 600;
+	color: #706d6d
+}
+
+
+/*For Tablets*/
+@media only screen and (min-width:768px){
+	nav{
+		display: block;
+		position: -webkit-sticky;/*Safari*/
+		position:sticky;
+		top:0;/*會置頂*/
+		z-index:2000;
+	}
+	nav ul li{
+		display: inline-block;
+	}
+	.menu{
+		display: none;
+	}
+	.this{
+		font-size: 22px;
+	}
+	.card{
+		border: solid 5px #fff;
+	}
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.cell {
+		width: 50%;
+	}
+	footer ul li{
+		display: inline-block;
+		margin-left:0px;
+	}
+	footer ul li a{
+		padding:15px 30px;
+	}
+}
+
+/*For desktop*/
+@media only screen and (min-width:1200px){
+	nav{
+		position: -webkit-sticky;/*Safari*/
+		position:sticky;
+		top:0;/*會置頂*/
+		z-index:2000;
+	}
+	.cell {
+		width: calc(100% / 3);
+	}
+	.this{
+		font-size: 25px;
+	}
+}
