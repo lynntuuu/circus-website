@@ -1,80 +1,83 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>馬戲紀錄片｜找一種感覺</title>
-<!--CSS-->
-<link rel="icon" href="images/circus.ico">
-<link href="css/index.css" rel="stylesheet" type="text/css">
-<link href="css/swiper.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<!--JS-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/swiper.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>馬戲紀錄片｜找一種感覺</title>
+	<!--CSS-->
+	<link rel="icon" href="images/circus.ico">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<link href="css/swiper.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!--JS-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/swiper.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 </head>
 
 <body>
 	<!--head-->
 	<header>
 		<h1>
-       	<a href="index.html" style="text-decoration:none;" class="article_a">
-        <img src="images/logo.png" height="100" width="100"/>
-        </a></h1>
-        <div class="menu"></div>
-    </header>
-    
-    <!--nav-->
-    <nav>
-        <ul>
-        	<li><a class="link" href="index.html">認識我們</a></li>
-        	<li><a class="link" href="stories.html">故事介紹</a></li>
-        	<li><a class="link" href="member.html">主角登場</a></li>
-            <li><a class="link" href="project.html">合作企劃</a></li>
-        </ul>
-    </nav>
-    
-<main>
-      <!-- swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><a href="#"><img src="images/IMG_347000000.jpg" width="100%"/></a></div>
-          <div class="swiper-slide"><a href="#"><img src="images/IMG_35999999.jpg" width="100%"/></a></div>
-          <div class="swiper-slide"><a href="#"><img src="images/IMG_3711111.jpg" width="100%"/></a></div>
-          <div class="swiper-slide"><a href="#"><img src="images/IMG_368444444444.jpg" width="100%"/></a></div>
-          <div class="swiper-slide"><a href="#"><img src="images/IMG_369666666.jpg" width="100%"/></a></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-</main>
-    
-    <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      speed: 1000,
-	  spaceBetween: 0, //圖跟圖之間有沒有隔一段距離
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-  
-<!--story1-->
+			<a href="index.html" style="text-decoration:none;" class="article_a">
+				<img src="images/logo.png" height="100" width="100" />
+			</a>
+		</h1>
+		<div class="menu"></div>
+	</header>
+
+	<!--nav-->
+	<nav>
+		<ul>
+			<li><a class="link" href="index.html">認識我們</a></li>
+			<li><a class="link" href="stories.html">故事介紹</a></li>
+			<li><a class="link" href="member.html">主角登場</a></li>
+			<li><a class="link" href="project.html">合作企劃</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<!-- swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><a href="#"><img src="images/IMG_347000000.jpg" width="100%" /></a></div>
+				<div class="swiper-slide"><a href="#"><img src="images/IMG_35999999.jpg" width="100%" /></a></div>
+				<div class="swiper-slide"><a href="#"><img src="images/IMG_3711111.jpg" width="100%" /></a></div>
+				<div class="swiper-slide"><a href="#"><img src="images/IMG_368444444444.jpg" width="100%" /></a></div>
+				<div class="swiper-slide"><a href="#"><img src="images/IMG_369666666.jpg" width="100%" /></a></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</main>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			speed: 1000,
+			spaceBetween: 0, //圖跟圖之間有沒有隔一段距離
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+
+	<!--story1-->
 	<div class="story1">
 		<div class="title">
 			<h1 class="start">＂故事啟程＂</h1>
@@ -83,67 +86,67 @@
 		<div class="project1">
 			<div class="grid-flex">
 				<div class="col col-image" style="background-image: url(images/4S7A6616.JPG);">
+				</div>
+				<div class="col col-text">
+					<div class="Aligner-item">
+						<h2 class="this">這是一部馬戲紀錄片</h2>
+						<span class="why">投下數不盡的歲月在某件事上，<br>卻因找不到出路，最終只能選擇離開。<br>
+							但，仍有一群在奮鬥的人們，<br>因為他們有個夢：<br>期待某天臺灣的馬戲能變成一種自身的日常，<br>
+							也是大眾的日常。
+						</span>
+					</div>
+				</div>
 			</div>
-			<div class="col col-text">
-				<div class="Aligner-item">
-				<h2 class="this">這是一部馬戲紀錄片</h2>
-				<span class="why">投下數不盡的歲月在某件事上，<br>卻因找不到出路，最終只能選擇離開。<br>
-				但，仍有一群在奮鬥的人們，<br>因為他們有個夢：<br>期待某天臺灣的馬戲能變成一種自身的日常，<br>
-				也是大眾的日常。
-				</span>
-			  	</div>
-			</div>
-		  </div>
 		</div>
 	</div>
-   
-   
-<!--story2-->
-   	<div class="story2">
+
+
+	<!--story2-->
+	<div class="story2">
 		<div class="title1">
 			<h1 class="start">＂主角登場＂</h1>
 		</div>
-		
-  		<div class="member">
-  	 		<div class="col-m-4 col-4">
-  				<div class="card">
-					<img src="images/head2.jpg" width="100%" alt=""/> 
+
+		<div class="member">
+			<div class="col-m-4 col-4">
+				<div class="card">
+					<img src="images/head2.jpg" width="100%" alt="" />
 					<h3 class="name">方意如</h3>
 					<p>方式馬戲創團者</p>
-   				</div>
-    		</div>
-    		
-     		<div class="col-m-4 col-4">
-    			<div class="card">
-					<img src="images/head3.jpg" width="100%" alt=""/> 
+				</div>
+			</div>
+
+			<div class="col-m-4 col-4">
+				<div class="card">
+					<img src="images/head3.jpg" width="100%" alt="" />
 					<h3 class="name">孫湧智</h3>
 					<p>方式馬戲培訓團員</p>
-        		</div>
-    		</div>
-    		
-     		<div class="col-m-4 col-4">
-   				<div class="card">
-					<img src="images/head1.jpg" width="100%" alt=""/> 
+				</div>
+			</div>
+
+			<div class="col-m-4 col-4">
+				<div class="card">
+					<img src="images/head1.jpg" width="100%" alt="" />
 					<h3 class="name">楊世豪</h3>
 					<p>方式馬戲合作藝術家</p>
-        		</div>
-   	 		</div>
-   	 		
-    		<div class="team1">
- 				<a href="member.html" style="text-decoration:none;" class="article_a">
-  				<button class="button1">認識我</button>
-  				</a>
- 			</div>
-		</div>  	
-   </div>
-   
-   
-<!--story2-->
-   	<div class="story3">
+				</div>
+			</div>
+
+			<div class="team1">
+				<a href="member.html" style="text-decoration:none;" class="article_a">
+					<button class="button1">認識我</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!--story2-->
+	<div class="story3">
 		<div class="title2">
 			<h1 class="start">＂合作企劃＂</h1>
 		</div>
-		
+
 		<div class="container">
 			<div class="grid">
 				<div class="cell">
@@ -164,47 +167,48 @@
 				<div class="cell">
 					<img src="images/usb111.jpg" class="pic">
 				</div>
-  			</div>
+			</div>
 		</div>
-		
-		<div class="text">
-			<div class="word">限時推出周邊商品 X 最新影片企劃	
-			<p>藝起走團隊與方式馬戲聯名推出系列商品<br>還有最新宣傳片等你一探究竟<br>
-			</p>
-			</div>			
-		</div>
-		
-		<div class="team2">
- 			<a href="project.html" style="text-decoration:none;" class="article_a">
-  				<button class="button2">來逛逛</button>
-  			</a>
- 		</div>
-</div>
 
-    
- <footer>
-	<ul>
-		<li><a class="link1" href="index.html" style="text-decoration:none;">認識我們</a></li>
-		<li>/</li>
-		<li><a class="link1" href="stories.html" style="text-decoration:none;">故事介紹</a></li>
-		<li>/</li>
-		<li><a class="link1" href="member.html" style="text-decoration:none;">主角登場</a></li>
-	   	<li>/</li>
-		<li><a class="link1" href="project.html" style="text-decoration:none;">合作企劃</a></li>
-	</ul>
-        
-	<div class="logo"><img src="images/logo.png" height="100" width="100" alt=""/></div>
-     
-	<a href="https://goo.gl/TGq9bK" style="text-decoration:none;" target="_blank" class="article_a">
-	<i class="fab fa-facebook-square ficon fa-1g"></i>
-    </a>   
-    
-    <a href="https://goo.gl/qXQfvg" style="text-decoration:none;" target="_blank" class="article_a">
-	<i class="fab fa-youtube-square ficon fa-1g"></i>
-    </a>
-	<h4 class="copy">&copy; 藝起走畢業製作團隊，2018</h4>
-        
-</footer>
-    
+		<div class="text">
+			<div class="word">限時推出周邊商品 X 最新影片企劃
+				<p>藝起走團隊與方式馬戲聯名推出系列商品<br>還有最新宣傳片等你一探究竟<br>
+				</p>
+			</div>
+		</div>
+
+		<div class="team2">
+			<a href="project.html" style="text-decoration:none;" class="article_a">
+				<button class="button2">來逛逛</button>
+			</a>
+		</div>
+	</div>
+
+
+	<footer>
+		<ul>
+			<li><a class="link1" href="index.html" style="text-decoration:none;">認識我們</a></li>
+			<li>/</li>
+			<li><a class="link1" href="stories.html" style="text-decoration:none;">故事介紹</a></li>
+			<li>/</li>
+			<li><a class="link1" href="member.html" style="text-decoration:none;">主角登場</a></li>
+			<li>/</li>
+			<li><a class="link1" href="project.html" style="text-decoration:none;">合作企劃</a></li>
+		</ul>
+
+		<div class="logo"><img src="images/logo.png" height="100" width="100" alt="" /></div>
+
+		<a href="https://goo.gl/TGq9bK" style="text-decoration:none;" target="_blank" class="article_a">
+			<i class="fab fa-facebook-square ficon fa-1g"></i>
+		</a>
+
+		<a href="https://goo.gl/qXQfvg" style="text-decoration:none;" target="_blank" class="article_a">
+			<i class="fab fa-youtube-square ficon fa-1g"></i>
+		</a>
+		<h4 class="copy">&copy; 藝起走畢業製作團隊，2018</h4>
+
+	</footer>
+
 </body>
+
 </html>
